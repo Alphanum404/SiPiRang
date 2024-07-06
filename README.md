@@ -12,14 +12,16 @@
     <br />
     <a href="https://github.com/azarnuzy/Rent-Room-App"><strong>This Source Code »</strong></a>
     <br />
+
+![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=Alphanum404.SiPiRang)
     <br />
 <div align="center">
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![GPL3 License][license-shield]][license-url]
+[![Contributors](https://img.shields.io/github/contributors/Alphanum404/SiPiRang.svg?style=for-the-badge)](https://github.com/Alphanum404/SiPirang/graphs/contributors)
+[![GitHub forks](https://img.shields.io/github/forks/Alphanum404/SiPiRang?style=for-the-badge)](https://github.com/Alphanum404/SiPiRang/network/members)
+[![GitHub Repo stars](https://img.shields.io/github/stars/Alphanum404/SiPiRang?style=for-the-badge)](https://github.com/Alphanum404/SiPirang/stargazers)
+![GitHub Issues](https://img.shields.io/github/issues/Alphanum404/SiPiRang?style=for-the-badge)
+
 
 </div>
     <!-- <a href="https://simanuk.c120.me/">View Demo</a>
