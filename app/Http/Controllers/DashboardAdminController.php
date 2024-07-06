@@ -14,7 +14,7 @@ class DashboardAdminController extends Controller
      */
     public function index()
     {
-        return view('dashboard.admin.index', [
+        return response()->view('dashboard.admin.index', [
             'title' => "Admin",
             'admins' => User::where('role_id', 2)->get(),
             'users' => User::where('role_id', '>', 2)->get(),
@@ -28,7 +28,7 @@ class DashboardAdminController extends Controller
      */
     public function create()
     {
-        //
+        return response()->view('dashboard.admin.create');
     }
 
     /**
@@ -61,9 +61,9 @@ class DashboardAdminController extends Controller
      * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function show(User $user)
+    public function show()
     {
-        //
+        return response()->json([]);
     }
 
     /**
@@ -74,7 +74,7 @@ class DashboardAdminController extends Controller
      */
     public function edit(User $user)
     {
-        return json_encode($user);
+        return response()->json($user);
     }
 
     /**

@@ -16,7 +16,7 @@ class DashboardRoomController extends Controller
      */
     public function index()
     {
-        return view('dashboard.rooms.index', [
+        return response()->view('dashboard.rooms.index', [
             'title' => "Ruangan",
             'rooms' => Room::latest()->paginate(10),
             'buildings' => Building::all(),
@@ -30,7 +30,7 @@ class DashboardRoomController extends Controller
      */
     public function create()
     {
-        //
+        return response()->view('dashboard.rooms.create');
     }
 
     /**
@@ -55,9 +55,9 @@ class DashboardRoomController extends Controller
         ]);
 
         if ($request->file('img')) {
-            $validatedData['img'] = $request->file('img')->store('room-image');
+            $validatedData['img'] = $request->file('img')->store('public/img/room-image');
         } else {
-            $validatedData['img'] = "room-image/roomdefault.jpg";
+            $validatedData['img'] = "public/img/room-image/roomdefault.jpg";
         }
 
         $validatedData['status'] = false;
@@ -75,7 +75,7 @@ class DashboardRoomController extends Controller
      */
     public function show(Room $room)
     {
-        return view('dashboard.rooms.show', [
+        return response()->view('dashboard.rooms.show', [
             'title' => $room->name,
             'room' => $room,
             'rooms' => Room::all(),
@@ -91,7 +91,7 @@ class DashboardRoomController extends Controller
      */
     public function edit(Room $room)
     {
-        return json_encode($room);
+        return response()->json($room);
     }
 
     /**
@@ -121,9 +121,9 @@ class DashboardRoomController extends Controller
         $validatedData = $request->validate($rules);
 
         if ($request->file('img')) {
-            $validatedData['img'] = $request->file('img')->store('room-image');
+            $validatedData['img'] = $request->file('img')->store('public/img/room-image');
         } else {
-            $validatedData['img'] = "room-image/roomdefault.jpg";
+            $validatedData['img'] = "public/img/room-image/roomdefault.jpg";
         }
 
         $validatedData['status'] = false;

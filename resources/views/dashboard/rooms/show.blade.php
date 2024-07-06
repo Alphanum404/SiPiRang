@@ -10,7 +10,7 @@
         <div class='img-container'>
           <img
             class='explore-item__thumbnail'
-            src='{{ asset('storage/' . $room->img) }}'
+            src='{{ asset('storage/' . str_replace('public/', '', $room->img)) }}'
             alt='{{ $room->name . '.jpg' }}'
             tabindex='0'
             style="width: 18rem;"
@@ -88,15 +88,15 @@
                 <tbody class="rent-details">
                     @foreach ($rents as $rent)
                     <tr class="rent-detail">
-                      <th scope="row">{{ $loop->iteration }}</th scope="row">
-                      <td>{{ $rent->user->name }}</td>
-                      <td class="detail-rent-room_start-time">{{ $rent->time_start_use }}</td>
-                      <td>{{ $rent->time_end_use }}</td>
-                      <td>{{ $rent->purpose }}</td>
-                      <td>{{ $rent->transaction_start }}</td>
-                      <td>{{ $rent->status }}</td>
+                        <th scope="row">{{ $loop->iteration }}</th>
+                        <td>{{ $rent->user->name }}</td>
+                        <td class="detail-rent-room_start-time">{{ $rent->time_start_use }}</td>
+                        <td>{{ $rent->time_end_use }}</td>
+                        <td>{{ $rent->purpose }}</td>
+                        <td>{{ $rent->transaction_start }}</td>
+                        <td>{{ $rent->status }}</td>
                     </tr>
-                  @endforeach
+                    @endforeach
                 </tbody>
               </table>
         </div>
