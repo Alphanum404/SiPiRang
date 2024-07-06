@@ -5,19 +5,28 @@
     <img src="public/img/logotext.png" alt="Logo" width="300">
   </a>
 
-  <h3 align="center">SiManuk (Sistem Informasi Peminjaman Ruangan Kampus)</h3>
+  <h3 align="center">SiPiRang (Sistem Informasi Peminjaman Ruangan)</h3>
 
   <p align="center">
-    Rent Room Application
+    Rent Room Application Forked From
     <br />
-    <a href="https://github.com/azarnuzy/Rent-Room-App"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/azarnuzy/Rent-Room-App"><strong>This Source Code »</strong></a>
     <br />
     <br />
-    <a href="https://simanuk.c120.me/">View Demo</a>
+<div align="center">
+
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![GPL3 License][license-shield]][license-url]
+
+</div>
+    <!-- <a href="https://simanuk.c120.me/">View Demo</a>
+    · -->
+    <!-- <a href="https://github.com/azarnuzy/Rent-Room-App/issues">Report Bug</a>
     ·
-    <a href="https://github.com/azarnuzy/Rent-Room-App/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/azarnuzy/Rent-Room-App/issues">Request Feature</a>
+    <a href="https://github.com/azarnuzy/Rent-Room-App/issues">Request Feature</a> -->
   </p>
 </div>
 
@@ -30,48 +39,57 @@
 ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/81504019/173018483-1f6de65f-7804-4cc7-a037-1ba258bda65f.gif)
 ![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/81504019/173018537-71abb256-74f8-43ee-afb6-f595d6903da9.gif)
 </div>
-Sistem Informasi Peminjaman Ruangan Kampus (SiManuk) is a real-time website-based application. SiManuk provides room availability as well as other detailed information about the rooms being and will be provided in a building. The target users of SiManuk are internal (lecturers and students) and external (guests/guests).
-SiManuk was created with the aim of knowing what rooms are being and will be used on the schedule provided on that day. In addition, SiManuk also helps new students or guests from outside the campus who do not even know the location of a room in the building. Information such as the person in charge of borrowing a room, the room used, the intended use of the room, the original schedule of the room, and the length of time the room can be viewed can also be viewed through the application. Of course, this makes it easier for the accessors so they don't have to check any particular room.
-Our reason for developing this project is because there are no similar projects that have been or are being developed in the FPMIPA-C UPI building.
+The SiPiRang Application (Room Reservation Information System) is a web-based system designed to facilitate the process of room reservation in an organization, educational institution, or company. This application is built using the Laravel framework, which is known for its efficient and easy-to-manage application development with its MVC (Model-View-Controller) architecture.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+[![Laravel](https://img.shields.io/badge/laravel-grey?style=for-the-badge&logo=laravel)](https://laravel.com)
 
-* [Laravel](https://laravel.com)
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
-* [XAMPP](https://www.apachefriends.org/download.html)
+[![Bootstrap](https://img.shields.io/badge/bootstrap-grey?style=for-the-badge&logo=bootstrap)](https://getbootstrap.com)
+
+[![JQuery](https://img.shields.io/badge/JQUERY-grey?style=for-the-badge&logo=jquery)](https://jquery.com)
+
+[![XAMPP](https://img.shields.io/badge/XAMPP-grey?style=for-the-badge&logo=XAMPP)](https://www.apachefriends.org)
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
-<!-- GETTING STARTED -->
-## Getting Started
+### Prerequisites
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Make sure you have the following software installed on your system:
+- Git
+- PHP
+- Composer
+- MySQL
 
-### Prerequisites and Installation
+### Installation
 
-This is an example of how to list things you need to use the software and how to install them.
-* Install Composer
-* Create project laravel on your directory project in terminal
+1. Clone the repository:
   ```
-    composer create project laravel/laravel 
+  git clone https://github.com/Alphanum404/SiPiRang.git
   ```
-* Create database to store migration from the project
-* modify the code according to this repository
-* Run migration on directory project terminal
+
+2. Install dependencies using Composer:
   ```
-    php artisan migrate:fresh --seed
+  composer install
   ```
-* Run project on directory project terminal
-  ``` 
-    php artisan serve
+
+3. Configure your database connection in the `.env` file.
+
+4. Run database migrations:
   ```
+  php artisan migrate:fresh --seed
+  ```
+
+5. Start the development server:
+  ```
+  php artisan serve
+  ```
+
+Now you should be able to access the project locally at `http://localhost:8000` or depending on your environment.
   
 ### Usage
 
