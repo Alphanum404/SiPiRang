@@ -51,11 +51,23 @@ class DashboardRentController extends Controller
         $validatedData['transaction_start'] = now();
         $validatedData['status'] = 'pending';
         $validatedData['transaction_end'] = null;
-
+    
+        $isRoomRented = Rent::where('room_id', $validatedData['room_id'])
+            ->where(function ($query) use ($validatedData) {
+                $query->where('status', 'dipinjam')
+                    ->orWhere('status', 'ongoing');
+            })
+            ->exists();
+    
+        if ($isRoomRented) {
+            return redirect('/dashboard/rents')->with('rentError', 'Ruangan sedang dipinjam. Harap tunggu hingga ruangan selesai dipinjam.');
+        }
+    
         Rent::create($validatedData);
-
+    
         return redirect('/dashboard/rents')->with('rentSuccess', 'Peminjaman diajukan. Harap tunggu konfirmasi admin.');
     }
+    
 
     /**
      * Display the specified resource.

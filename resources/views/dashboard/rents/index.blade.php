@@ -10,6 +10,12 @@
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
   @endif
+  @if(session()->has('rentError'))
+    <div class="col-md-16 mx-auto alert alert-danger text-center  alert-success alert-dismissible fade show" style="margin-top: 50px" role="alert">
+        {{session('rentError')}}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+  @endif
   @if(session()->has('deleteRent'))
     <div class="col-md-16 mx-auto alert alert-success text-center  alert-dismissible fade show" style="margin-top: 50px" role="alert">
         {{session('deleteRent')}}
