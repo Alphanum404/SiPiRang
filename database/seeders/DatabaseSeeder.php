@@ -66,7 +66,7 @@ class DatabaseSeeder extends Seeder
             'name' => 'admin',
             'email' => 'admin@gmail.com',
             'password' => bcrypt('admin'),
-            'nomor_induk' => '0',
+            'nomor_induk' => '00',
             'role_id' => 2 ,
         ]);
 
