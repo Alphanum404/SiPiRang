@@ -123,14 +123,14 @@ class DatabaseSeeder extends Seeder
         ]);
 
         Building::create([
-            'code' => 'MELATI',
+            'code' => 'MELATI-A',
             'name' => 'MELATI ATAS',
             'location' => 'https://goo.gl/maps/fUsDWZE1CZEF1C1YA',
             'faculty_id' => 2,
         ]);
 
         Building::create([
-            'code' => 'MELATI',
+            'code' => 'MELATI-B',
             'name' => 'MELATI BAWAH',
             'location' => 'https://goo.gl/maps/osU487Y3MGa8rhgk7',
             'faculty_id' => 2,
