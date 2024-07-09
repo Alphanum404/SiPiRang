@@ -149,8 +149,8 @@ class DatabaseSeeder extends Seeder
         ]);
 
         Rent::create([
-            'room_id' => mt_rand(1, 15),
-            'user_id' => mt_rand(1, 5),
+            'room_id' => 1,
+            'user_id' => 1,
             'transaction_start' => now(),
             'transaction_end' => null,
             'time_start_use' => '2022-05-11 08:00:00',
