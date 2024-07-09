@@ -9,7 +9,7 @@
     />
     <meta name="keywords" content="Peminjaman Ruangan Kampus" />
     <meta name="theme-color" content="#1A374D" />
-    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="/img/logo.png" />
     <link rel="stylesheet" href="/css/index.css" />
     <link rel="stylesheet" href="/css/dashboard.css" />
     <link rel="stylesheet" href="/css/responsive.css" />
