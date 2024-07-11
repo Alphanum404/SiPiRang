@@ -4,8 +4,7 @@
 
 <head>
     <base href="../../../">
-    <title>Metronic - the world's #1 selling Bootstrap Admin Theme Ecosystem for HTML, Vue, React, Angular &amp; Laravel
-        by Keenthemes</title>
+    <title>SiManuk App | {{$title}} </title>
     <meta name="description"
         content="The most advanced Bootstrap Admin Theme on Themeforest trusted by 94,000 beginners and professionals. Multi-demo, Dark Mode, RTL support and complete React, Angular, Vue &amp; Laravel versions. Grab your copy now and get life-time updates for free." />
     <meta name="keywords"
@@ -19,7 +18,7 @@
     <meta property="og:url" content="https://keenthemes.com/metronic" />
     <meta property="og:site_name" content="Keenthemes | Metronic" />
     <link rel="canonical" href="https://preview.keenthemes.com/metronic8" />
-    <link rel="shortcut icon" href="metro/assets/media/logos/favicon.ico" />
+    <link rel="icon" href="/img/logo.png" />
     <!--begin::Fonts-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
     <!--end::Fonts-->
@@ -38,14 +37,14 @@
         <div class="d-flex flex-column flex-lg-row flex-column-fluid">
             <!--begin::Aside-->
             <div class="d-flex flex-column flex-lg-row-auto w-xl-600px positon-xl-relative"
-                style="background-color: #F2C98A">
+                style="background-color: #13263c">
                 <!--begin::Wrapper-->
                 <div class="d-flex flex-column position-xl-fixed top-0 bottom-0 w-xl-600px scroll-y">
                     <!--begin::Content-->
                     <div class="d-flex flex-row-fluid flex-column text-center p-10 pt-lg-20">
                         <!--begin::Logo-->
-                        <a href="../../demo1/dist/index.html" class="py-9 mb-5">
-                            <img alt="Logo" src="metro/assets/media/logos/logo-2.svg" class="h-60px" />
+                        <a class="py-9 mb-5">
+                            <img alt="Logo" src="img/logo.png" class="h-70px" />
                         </a>
                         <!--end::Logo-->
                         <!--begin::Title-->
@@ -61,7 +60,7 @@
                     <!--end::Content-->
                     <!--begin::Illustration-->
                     <div class="d-flex flex-row-auto bgi-no-repeat bgi-position-x-center bgi-size-contain bgi-position-y-bottom min-h-100px min-h-lg-350px"
-                        style="background-image: url(metro/assets/media/illustrations/sketchy-1/13.png)"></div>
+                        style="background-image: url(metro/assets/media/illustrations/sketchy-1/4-dark.png)"></div>
                     <!--end::Illustration-->
                 </div>
                 <!--end::Wrapper-->
@@ -119,7 +118,7 @@
                                 <!--end::Wrapper-->
                                 <!--begin::Input-->
                                 <input class="form-control form-control-lg form-control-solid" type="password"
-                                    name="password" autocomplete="off" required/>
+                                    name="password" autocomplete="off" required />
                                 <!--end::Input-->
                             </div>
                             <!--end::Input group-->
