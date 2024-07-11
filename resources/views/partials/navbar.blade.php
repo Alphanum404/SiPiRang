@@ -79,7 +79,7 @@ navbar
             </div>
             @else
             <div class="flex-equal text-end ms-1">
-                <a href="/dashboard/rooms" class="btn btn-success">Login</a>
+                <a href="/login" class="btn btn-success">Login</a>
             </div>
             @endauth
             <!--end::Toolbar-->
