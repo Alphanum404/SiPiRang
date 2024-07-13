@@ -9,6 +9,7 @@ use App\Http\Controllers\DashboardAdminController;
 use App\Http\Controllers\DashboardRoomController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\TemporaryRentController;
+use App\Http\Controllers\DashboardIndexController;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,6 +34,8 @@ Route::post('/login', [LoginController::class, 'authenticate']);
 
 Route::post('/logout', [LoginController::class, 'logout']);
 
+Route::get('/dashboard/index', [DashboardIndexController::class, 'index'])->middleware('auth');
+
 Route::get('dashboard/rents/{id}/endTransaction', [DashboardRentController::class, 'endTransaction'])->middleware('auth');
 
 Route::resource('dashboard/rents', DashboardRentController::class)->middleware('auth');
@@ -52,15 +55,3 @@ Route::get('/dashboard/temporaryRents', [TemporaryRentController::class, 'index'
 Route::get('/dashboard/temporaryRents/{id}/acceptRents', [TemporaryRentController::class, 'acceptRents'])->middleware('auth');
 
 Route::get('/dashboard/temporaryRents/{id}/declineRents', [TemporaryRentController::class, 'declineRents'])->middleware('auth');
-
-Route::get('/help', function () {
-    return view('help', [
-        'title' => "Help",
-    ]);
-});
-
-Route::get('/about', function () {
-    return view('about', [
-        'title' => "About"
-    ]);
-});
