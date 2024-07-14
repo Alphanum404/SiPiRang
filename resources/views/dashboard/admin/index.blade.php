@@ -117,6 +117,42 @@ $user = auth()->user();
                 </tbody>
                 <!--end::Table body-->
               </table>
+              <!-- begin::filtering -->
+              <script>
+                function filterTable() {
+                  // Get input element
+                  var input = document.getElementById("myInput");
+                  // Get table element
+                  var table = document.getElementById("myTable");
+                  // Get table rows
+                  var rows = table.querySelectorAll("tr#data");
+
+                  // Loop through all table rows, and hide those who don't match the search query
+                  for (var i = 0; i < rows.length; i++) {
+                    var row = rows[i];
+                    var cells = row.getElementsByTagName("td");
+                    var match = false;
+
+                    // Loop through all table cells in current row
+                    for (var j = 0; j < cells.length; j++) {
+                      var cell = cells[j];
+                      // Check if cell contains the search input value
+                      if (cell.innerHTML.toLowerCase().indexOf(input.value.toLowerCase()) > -1) {
+                        match = true;
+                        break;
+                      }
+                    }
+
+                    // Show or hide the row based on the match result
+                    if (match) {
+                      row.style.display = "";
+                    } else {
+                      row.style.display = "none";
+                    }
+                  }
+                }
+              </script>
+              <!-- end::filtering -->
               <!--end::Table-->
             </div>
             <!--begin::Pagination-->
