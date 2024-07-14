@@ -1,4 +1,3 @@
-navbar
 <!--begin::Header-->
 <div class="landing-header" data-kt-sticky="true" data-kt-sticky-name="landing-header"
     data-kt-sticky-offset="{default: '200px', lg: '300px'}">
@@ -35,7 +34,7 @@ navbar
             <!--begin::Menu wrapper-->
             <div class="d-lg-block" id="kt_header_nav_wrapper">
                 <div class="d-lg-block p-5 p-lg-0" data-kt-drawer="true" data-kt-drawer-name="landing-menu"
-                    data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true"
+                    data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="false"
                     data-kt-drawer-width="200px" data-kt-drawer-direction="start"
                     data-kt-drawer-toggle="#kt_landing_menu_toggle" data-kt-swapper="true"
                     data-kt-swapper-mode="prepend"
@@ -75,7 +74,7 @@ navbar
             <!--begin::Toolbar-->
             @auth
             <div class="flex-equal text-end ms-1">
-                <a href="/dashboard/rooms" class="btn btn-success">Dashboard</a>
+                <a href="/dashboard/index" class="btn btn-success">Dashboard</a>
             </div>
             @else
             <div class="flex-equal text-end ms-1">
