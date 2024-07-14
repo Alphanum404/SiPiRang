@@ -88,6 +88,9 @@
   <script src="metro/assets/js/custom/modals/upgrade-plan.js"></script>
   <!--end::Page Custom Javascript-->
   <!--end::Javascript-->
+  <script src="/js/editroom.js"></script>
+    <script src="/js/edituser.js"></script>
+    <script src="/js/editadmin.js"></script>
 </body>
 <!--end::Body-->
 
