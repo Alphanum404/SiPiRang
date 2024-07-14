@@ -77,7 +77,7 @@
                       </a>
                     </div>
                     <div class="menu-item">
-                      <a class="menu-link" href="/dashboard/users">
+                      <a class="menu-link {{Request::is('dashboard/users') ? 'active' : '' }}"" href="/dashboard/users">
                         <span class="menu-bullet">
                           <span class="bullet bullet-dot"></span>
                         </span>
