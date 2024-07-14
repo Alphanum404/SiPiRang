@@ -33,7 +33,7 @@
                   </div>
                 </div>
                 <div class="menu-item">
-                  <a class="menu-link active" href="/dashboard/index">
+                  <a class="menu-link {{Request::is('dashboard/index') ? 'active' : '' }}" href="/dashboard/index">
                     <span class="menu-icon">
                       <!--begin::Svg Icon | path: icons/duotune/art/art002.svg-->
                       <span class="svg-icon svg-icon-2">
@@ -52,7 +52,7 @@
                     <span class="menu-section text-muted text-uppercase fs-8 ls-1">MANAJEMEN</span>
                   </div>
                 </div>
-                <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+                <div data-kt-menu-trigger="click" class="menu-item menu-accordion {{Request::is('dashboard/admin') || Request::is('dashboard/users') ? 'hover show' : '' }}">
                   <span class="menu-link">
                     <span class="menu-icon">
                       <!--begin::Svg Icon | path: icons/duotune/communication/com013.svg-->
@@ -69,7 +69,7 @@
                   </span>
                   <div class="menu-sub menu-sub-accordion menu-active-bg">
                     <div class="menu-item">
-                      <a class="menu-link" href="/dashboard/admin">
+                      <a class="menu-link {{Request::is('dashboard/admin') ? 'active' : '' }}" href="/dashboard/admin">
                         <span class="menu-bullet">
                           <span class="bullet bullet-dot"></span>
                         </span>
