@@ -8,6 +8,8 @@ $user = auth()->user();
   window.location.href = "/dashboard/index";
 </script>
 @else
+@extends('dashboard.layout.main')
+
 @section('container')
 <!-- begin::Post -->
 <div class="post d-flex flex-column-fluid" id="kt_post">
@@ -117,7 +119,6 @@ $user = auth()->user();
                 </tbody>
                 <!--end::Table body-->
               </table>
-              <!-- begin::filtering -->
               <script>
                 function filterTable() {
                   // Get input element
@@ -152,7 +153,6 @@ $user = auth()->user();
                   }
                 }
               </script>
-              <!-- end::filtering -->
               <!--end::Table-->
             </div>
             <!--begin::Pagination-->
