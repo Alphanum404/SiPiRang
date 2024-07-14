@@ -26,6 +26,8 @@
   <link href="metro/assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
   <link href="metro/assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
   <!--end::Global Stylesheets Bundle-->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <!--end::Head-->
 <!--begin::Body-->
@@ -88,9 +90,27 @@
   <script src="metro/assets/js/custom/modals/upgrade-plan.js"></script>
   <!--end::Page Custom Javascript-->
   <!--end::Javascript-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/js/index.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+    <script>
+      $('#datatable').DataTable( {
+        columnDefs: [
+          {
+            targets: '_all',
+            className: 'dt-head-center'
+          }
+        ]
+      });
+      $('#datatable_length').css('text-align', 'left');
+      $('#datatable_info').css('text-align', 'left');
+    </script>
+  {{-- Room Edit Modal --}}
   <script src="/js/editroom.js"></script>
-    <script src="/js/edituser.js"></script>
-    <script src="/js/editadmin.js"></script>
+  <script src="/js/edituser.js"></script>
+  <script src="/js/editadmin.js"></script>
 </body>
 <!--end::Body-->
 
