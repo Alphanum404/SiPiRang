@@ -16,7 +16,7 @@ class DashboardAdminController extends Controller
     {
         return response()->view('dashboard.admin.index', [
             'title' => "Admin",
-            'admins' => User::where('role_id', 2)->get(),
+            'admins' => User::where('role_id', 2)->paginate(10),
             'users' => User::where('role_id', '>', 2)->get(),
         ]);
     }
