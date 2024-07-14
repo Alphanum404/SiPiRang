@@ -1,3 +1,13 @@
+@php
+$user = auth()->user();
+@endphp
+
+@if($user->role_id > 2)
+<script>
+  alert("You're not allowed to access this resources!");
+  window.location.href = "/dashboard/index";
+</script>
+@else
 @section('container')
 <!-- begin::Post -->
 <div class="post d-flex flex-column-fluid" id="kt_post">
