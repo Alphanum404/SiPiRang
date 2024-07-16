@@ -39,8 +39,8 @@
     <!--end::Aside mobile toggle-->
     <!--begin::Mobile logo-->
     <div class="d-flex align-items-center flex-grow-1 flex-lg-grow-0">
-      <a href="../../demo1/dist/index.html" class="d-lg-none">
-        <img alt="Logo" src="assets/media/logos/logo-2.svg" class="h-30px" />
+      <a href="" class="d-lg-none">
+        <img alt="Logo" src="img/logotext.png" class="h-50px" />
       </a>
     </div>
     <!--end::Mobile logo-->
@@ -62,9 +62,9 @@
             <!--begin::Item-->
             <li class="breadcrumb-item text-muted">
               <a
-                href="/"
+                href="{{ Request::is('dashboard/rooms/*') ? '/dashboard/rooms' : '/' }}"
                 class="text-muted text-hover-primary"
-                >Home</a
+                >{{ Request::is('dashboard/rooms/*') ? 'Rooms' : 'Home' }}</a
               >
             </li>
             <!--end::Item-->
@@ -98,7 +98,7 @@
               data-kt-menu-attach="parent"
               data-kt-menu-placement="bottom-end"
             >
-              <img src="assets/media/avatars/150-26.jpg" alt="user" />
+              <img src="/img/user.png" alt="user" />
             </div>
             <!--begin::Menu-->
             <div
@@ -110,7 +110,7 @@
                 <div class="menu-content d-flex align-items-center px-3">
                   <!--begin::Avatar-->
                   <div class="symbol symbol-50px me-5">
-                    <img alt="Logo" src="assets/media/avatars/150-26.jpg" />
+                    <img alt="Logo" src="/img/user.png" />
                   </div>
                   <!--end::Avatar-->
                   <!--begin::Username-->
