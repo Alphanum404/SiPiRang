@@ -8,7 +8,7 @@ $user = auth()->user();
   window.location.href = "/dashboard/index";
 </script>
 @else
-@extends('dashboard.layout.main')
+@extends('dashboard.layouts.main')
 
 @section('container')
 <!-- begin::Post -->
