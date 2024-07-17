@@ -4,7 +4,7 @@
           <div class="aside-logo flex-column-auto" id="kt_aside_logo">
             <!--begin::Logo-->
             <a>
-              <img alt="Logo" src="img/logotext.png" class="h-50px logo" />
+              <img alt="Logo" src="{{Request::is('dashboard/*/') ? '/img/logotext.png' : '../img/logotext.png' }}" class="h-50px logo" />
             </a>
             <!--end::Logo-->
             <!--begin::Aside toggler-->
@@ -108,7 +108,7 @@
                   </div>
                 </div>
                 <div class="menu-item">
-                  <a class="menu-link" href="/dashboard/temporaryRents">
+                  <a class="menu-link {{Request::is('dashboard/temporaryRents') ? 'active' : '' }}"" href="/dashboard/temporaryRents">
                     <span class="menu-icon">
                       <!--begin::Svg Icon | path: icons/duotune/general/gen014.svg-->
                       <span class="svg-icon svg-icon-2">
