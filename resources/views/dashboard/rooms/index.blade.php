@@ -37,7 +37,7 @@
                 </span>
                 <!--end::Svg Icon-->Pinjam
                 </button>
-                @endif @if (auth()->user()->role_id <= 2) <button class="btn btn-sm btn-light-danger" data-bs-toggle="modal" data-bs-target="#addRoom">
+                @endif @if (auth()->user()->role_id <= 2) <button class="btn btn-sm btn-light-success" data-bs-toggle="modal" data-bs-target="#addRoom">
                   <!--begin::Svg Icon | path: icons/duotune/arrows/arr075.svg-->
                   <span class="svg-icon svg-icon-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -103,7 +103,7 @@
                       <form action="/dashboard/rooms/{{ $room->code }}" method="POST">
                         @method('DELETE')
                         @csrf
-                        <button type="submit" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm" onclick="return confirm('Delete room data?')">
+                        <button type="submit" class="btn btn-icon btn-bg-light btn-active-color-danger btn-sm" onclick="return confirm('Delete room data?')">
                           <!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
                           <span class="svg-icon svg-icon-3">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
