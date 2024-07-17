@@ -47,6 +47,7 @@
                     <span class="menu-title">Dashboard</span>
                   </a>
                 </div>
+                @if (auth()->user()->role_id <= 2)
                 <div class="menu-item">
                   <div class="menu-content pt-8 pb-2">
                     <span class="menu-section text-muted text-uppercase fs-8 ls-1">MANAJEMEN</span>
@@ -86,6 +87,7 @@
                     </div>
                   </div>
                 </div>
+                @endif
 
                 <div class="menu-item">
                   <a class="menu-link {{Request::is('dashboard/rooms') ? 'active' : '' }}" href="/dashboard/rooms">
@@ -102,11 +104,14 @@
                     <span class="menu-title">Rooms</span>
                   </a>
                 </div>
+                @if (auth()->user()->role_id <= 4)
                 <div class="menu-item">
                   <div class="menu-content pt-8 pb-2">
                     <span class="menu-section text-muted text-uppercase fs-8 ls-1">MENU</span>
                   </div>
                 </div>
+                @endif
+                @if (auth()->user()->role_id <= 2)
                 <div class="menu-item">
                   <a class="menu-link {{Request::is('dashboard/temporaryRents') ? 'active' : '' }}"" href="/dashboard/temporaryRents">
                     <span class="menu-icon">
@@ -123,6 +128,8 @@
                     <span class="menu-title">Permintaan Peminjaman</span>
                   </a>
                 </div>
+                @endif
+                @if (auth()->user()->role_id <= 4)
                 <div class="menu-item">
                   <a class="menu-link {{Request::is('dashboard/rents') ? 'active' : '' }}" href="/dashboard/rents">
                     <span class="menu-icon">
@@ -138,6 +145,7 @@
                     <span class="menu-title">Daftar Peminjaman</span>
                   </a>
                 </div>
+                @endif
               </div>
               <!--end::Menu-->
             </div>
