@@ -3,6 +3,7 @@
 @section('container')
 <!-- begin::Post -->
 <div class="post d-flex flex-column-fluid" id="kt_post">
+<div id="kt_content_container" class="container-xxl">
   <!--begin::Container-->
       <!--begin::Tables Widget 11-->
       @if(session()->has('rentSuccess'))
@@ -12,7 +13,7 @@
       </div>
       @endif
       @if(session()->has('rentError'))
-      <div class="col-md-16 mx-auto alert alert-warning text-center alert-dismissible fade show" style="margin-top: 50px" role="alert">
+      <div class="col-md-16 mx-auto alert alert-danger text-center alert-dismissible fade show" style="margin-top: 50px" role="alert">
         {{session('rentError')}}
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
       </div>
@@ -191,6 +192,7 @@
         </div>
         <!--end::Tables Widget 11-->
       </div>
+    </div>
     </div>
     <!--end::Container-->
 <!-- end::Post -->
