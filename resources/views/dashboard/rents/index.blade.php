@@ -137,7 +137,7 @@
                       <form action="/dashboard/rents/{{ $rent->id }}" method="POST">
                         @method('DELETE')
                         @csrf
-                        <button type="submit" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm" onclick="return confirm('Delete rent data?')">
+                        <button type="submit" class="btn btn-icon btn-bg-light btn-active-color-danger btn-sm" onclick="return confirm('Delete rent data?')">
                           <!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
                           <span class="svg-icon svg-icon-3">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
