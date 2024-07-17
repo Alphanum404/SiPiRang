@@ -36,7 +36,7 @@ $user = auth()->user();
                   </svg>
                 </span>
                 <!--end::Svg Icon-->Select From User</a>
-              <button class="btn btn-sm btn-light-danger" data-bs-toggle="modal" data-bs-target="#addAdmin">
+              <button class="btn btn-sm btn-light-success" data-bs-toggle="modal" data-bs-target="#addAdmin">
                 <!--begin::Svg Icon | path: icons/duotune/arrows/arr075.svg-->
                 <span class="svg-icon svg-icon-2">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -92,7 +92,7 @@ $user = auth()->user();
                       <span class="badge badge-light-warning fs-7 fw-bold">Admin</span>
                     </td>
                     <td class="text-end">
-                      <a href="/dashboard/users/{{ $admin->id }}/edit" class="edituser btn-icon btn-bg-light btn-active-color-primary btn-sm me-1" id="edituser" name="edituser" data-id="{{ $admin->id }}" data-bs-toggle="modal" data-bs-target="#edituser">
+                      <a href="/dashboard/users/{{ $admin->id }}/edit" class="edituser btn-icon btn-bg-light btn-active-color-warning btn-sm me-1" id="edituser" name="edituser" data-id="{{ $admin->id }}" data-bs-toggle="modal" data-bs-target="#edituser">
                         <!--begin::Svg Icon | path: icons/duotune/art/art005.svg-->
                         <span class="svg-icon svg-icon-3">
                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -102,7 +102,7 @@ $user = auth()->user();
                         </span>
                         <!--end::Svg Icon-->
                       </a>
-                      <a href="/dashboard/admin/{{ $admin->id }}/removeAdmin" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm" onclick="return confirm('Ubah admin menjadi mahasiswa?')">
+                      <a href="/dashboard/admin/{{ $admin->id }}/removeAdmin" class="btn btn-icon btn-bg-light btn-active-color-danger btn-sm" onclick="return confirm('Ubah admin menjadi mahasiswa?')">
                         <!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
                         <span class="svg-icon svg-icon-3">
                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
