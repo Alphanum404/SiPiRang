@@ -37,7 +37,7 @@ $user = auth()->user();
             </h3>
             <div class="card-toolbar">
               <input type="text" id="myInput" class="form-control" style="width: 100px; height: 37px" placeholder="Search" onkeyup="filterTable()" />
-              <button class="btn btn-sm btn-light-primary" data-bs-toggle="modal" data-bs-target="#addUser">
+              <button class="btn btn-sm btn-light-success" data-bs-toggle="modal" data-bs-target="#addUser">
                 <!--begin::Svg Icon | path: icons/duotune/arrows/arr075.svg-->
                 <span class="svg-icon svg-icon-2">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -115,7 +115,7 @@ $user = auth()->user();
                         </span>
                         <!--end::Svg Icon-->
                       </a>
-                      <a href="/dashboard/users/{{ $user->id }}/makeAdmin" class="makeadmin btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1" id="makeadmin">
+                      <a href="/dashboard/users/{{ $user->id }}/makeAdmin" class="makeadmin btn btn-icon btn-bg-light btn-active-color-warning btn-sm me-1" id="makeadmin">
                         <!--begin::Svg Icon | path: icons/duotune/general/gen019.svg-->
                         <span class="svg-icon svg-icon-3">
                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -128,7 +128,7 @@ $user = auth()->user();
                       <form action="/dashboard/users/{{ $user->id }}" method="POST">
                         @method('DELETE')
                         @csrf
-                        <button type="submit" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm" onclick="return confirm('Delete user data?')">
+                        <button type="submit" class="btn btn-icon btn-bg-light btn-active-color-danger btn-sm" onclick="return confirm('Delete user data?')">
                           <!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
                           <span class="svg-icon svg-icon-3">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
