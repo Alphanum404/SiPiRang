@@ -12,15 +12,14 @@
                     <div class="card-header border-1 pt-3">
 
                         <!-- begin:img -->
-                        <div class='img-container'>
+                        <div class='img-container position-relative'>
                             <img class='explore-item__thumbnail rounded' src='{{ asset('storage/' . str_replace('public/', '', $room->img)) }}' alt='{{ $room->name . '.jpg' }}' tabindex='0' style="width: 18rem;" />
                         </div>
                         <!-- end:img -->
                         <!-- begin::details -->
-                        <ul class='detail-explore__info'>
-                            <table class="table table-borderless table-sm" >
+                        <ul class="flex-grow-1">
+                            <table class="d-flex justify-content align-items-start flex-wrap mb-2">
                                 <thead>
-                                </thead>
                                 <tbody>
                                     <tr>
                                         <th scope="col">Nama</th>
@@ -48,9 +47,10 @@
                                     </tr>
                                     <tr>
                                         <th scope="col">Deskripsi</th>
-                                        <td style="word-wrap: break-word; max-width: 550px;">: {{$room->description}}</td>
+                                        <td class="d-flex flex-column" style="word-wrap: break-word; max-width: 370px;"" >: {{$room->description}}</td>
                                     </tr>
                                 </tbody>
+                                </thead>
                             </table>
                         </ul>
                         <!-- end::details -->
@@ -62,7 +62,7 @@
                             <span class="card-label fw-bolder fs-3 mb-1">Peminjaman {{$room->name}}</span>
                         </h3>
                         <div class="column card-toolbar">
-                            
+
                             @if (auth()->user()->role_id <= 4) <button class="btn btn-sm btn-light-primary" type="button" data-bs-toggle="modal" data-bs-target="#pinjamRuangan">
                                 <!--begin::Svg Icon | path: icons/duotune/arrows/arr075.svg-->
                                 <svg fill="#000000" height="17px" width="17px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve">
