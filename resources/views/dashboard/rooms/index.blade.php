@@ -1,4 +1,4 @@
-@extends('dashboard.layout.main')
+@extends('dashboard.layouts.main')
 
 @section('container')
 <!-- begin::Post -->
