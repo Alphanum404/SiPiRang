@@ -124,7 +124,7 @@
                   </a>
                 </div>
                 <div class="menu-item">
-                  <a class="menu-link" href="/dashboard/rents">
+                  <a class="menu-link {{Request::is('dashboard/rents') ? 'active' : '' }}" href="/dashboard/rents">
                     <span class="menu-icon">
                       <!--begin::Svg Icon | path: icons/duotune/general/gen009.svg-->
                       <span class="svg-icon svg-icon-2">
