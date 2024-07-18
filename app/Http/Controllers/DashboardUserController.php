@@ -127,4 +127,24 @@ class DashboardUserController extends Controller
 
         return redirect('/dashboard/admin')->with('adminSuccess', 'Data admin berhasil ditambahkan');
     }
+
+    public function changePassword(User $user)
+    {
+        return view('dashboard.users.setting', [
+            'title' => 'Setting',
+            'user' => $user
+        ]);
+    }
+
+    public function updatePassword(Request $request, User $user)
+    {
+        $validatedData = $request->validate([
+            'password' => 'required|min:7',
+        ]);
+
+        $user->password = bcrypt($validatedData['password']);
+        $user->save();
+
+        return redirect('/dashboard/setting')->with('passwordSuccess', 'Password berhasil diubah');
+    }
 }

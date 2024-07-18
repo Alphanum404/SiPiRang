@@ -55,3 +55,7 @@ Route::get('/dashboard/temporaryRents', [TemporaryRentController::class, 'index'
 Route::get('/dashboard/temporaryRents/{id}/acceptRents', [TemporaryRentController::class, 'acceptRents'])->middleware('auth');
 
 Route::get('/dashboard/temporaryRents/{id}/declineRents', [TemporaryRentController::class, 'declineRents'])->middleware('auth');
+
+Route::get('/dashboard/setting', [DashboardUserController::class, 'changePassword'])->name('users.setting')->middleware('auth');
+
+Route::post('/dashboard/setting', [DashboardUserController::class, 'updatePassword'])->name('users.update')->middleware('auth');
