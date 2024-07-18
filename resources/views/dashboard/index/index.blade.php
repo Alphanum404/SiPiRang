@@ -27,7 +27,7 @@
         <!--begin::Amount-->
         <span class="fs-2hx fw-bold text-warning me-2 lh-1 ls-n2">{{$totalRooms}}</span>
         <!--end::Amount-->
-        <a href="#" class="text-warning fw-bold fs-6">Total Ruangan</a>
+        <a class="text-warning fw-bold fs-6">Total Ruangan</a>
       </div>
       <!--end::Col-->
       <!--begin::Col-->
@@ -44,7 +44,7 @@
         <!--begin::Amount-->
         <span class="fs-2hx fw-bold text-primary  me-2 lh-1 ls-n2">{{$rentRooms}}</span>
         <!--end::Amount-->
-        <a href="#" class="text-primary fw-bold fs-6">Ruangan Dipinjam</a>
+        <a class="text-primary fw-bold fs-6">Ruangan Dipinjam</a>
       </div>
       <!--end::Col-->
     </div>
@@ -72,7 +72,7 @@
         <!--begin::Amount-->
         <span class="fs-2hx fw-bold text-danger me-2 lh-1 ls-n2">{{$availableRooms}}</span>
         <!--end::Amount-->
-        <a href="#" class="text-danger fw-bold fs-6 mt-2">Ruangan Tersedia</a>
+        <a class="text-danger fw-bold fs-6 mt-2">Ruangan Tersedia</a>
       </div>
       <!--end::Col-->
       <!--begin::Col-->
@@ -90,7 +90,7 @@
         <!--begin::Amount-->
         <span class="fs-2hx fw-bold text-success me-2 lh-1 ls-n2">{{$totalUsers}}</span>
         <!--end::Amount-->
-        <a href="#" class="text-success fw-bold fs-6 mt-2">Total Pengguna</a>
+        <a class="text-success fw-bold fs-6 mt-2">Total Pengguna</a>
       </div>
       <!--end::Col-->
     </div>
