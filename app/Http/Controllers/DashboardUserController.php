@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use App\Models\Role;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
 class DashboardUserController extends Controller
 {
@@ -136,14 +137,31 @@ class DashboardUserController extends Controller
         ]);
     }
 
+    /**
+     * Update password
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Models\User  $user
+     * @return \Illuminate\Http\Response
+     */
+
     public function updatePassword(Request $request, User $user)
     {
-        $validatedData = $request->validate([
-            'password' => 'required|min:7',
-        ]);
+        if ($request->nomor_induk != $user->nomor_induk) {
+            $rules['nomor_induk'] = 'required|max:18|unique:users,nomor_induk';
+        }
 
-        $user->password = bcrypt($validatedData['password']);
-        $user->save();
+        if (empty($request->old_password) || empty($request->new_password)) {
+            return redirect('/dashboard/setting')->with('passwordError', 'Password lama dan baru harus diisi');
+        }
+
+        if (!password_verify($request->old_password, auth()->user()->password)) {
+            return redirect('/dashboard/setting')->with('passwordError', 'Password lama salah');
+        }
+
+        $password = bcrypt($request->new_password);
+        User::where('id', auth()->user()->id)
+            ->update(['password' => $password]);
 
         return redirect('/dashboard/setting')->with('passwordSuccess', 'Password berhasil diubah');
     }
