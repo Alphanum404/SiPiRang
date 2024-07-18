@@ -4,7 +4,7 @@
 
 <head>
     <base href="../../../">
-    <title>SiManuk App | {{$title}} </title>
+    <title>SiPiRang App | {{$title}} </title>
     <meta name="description"
         content="The most advanced Bootstrap Admin Theme on Themeforest trusted by 94,000 beginners and professionals. Multi-demo, Dark Mode, RTL support and complete React, Angular, Vue &amp; Laravel versions. Grab your copy now and get life-time updates for free." />
     <meta name="keywords"
