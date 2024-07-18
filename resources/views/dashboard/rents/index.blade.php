@@ -1,3 +1,13 @@
+@php
+$user = auth()->user();
+@endphp
+
+@if($user->role_id >= 4 )
+<script>
+  window.alert("You're not allowed to access this resources!");
+  window.location.href = "/dashboard/index";
+</script>
+@else
 @extends('dashboard.layouts.main')
 
 @section('container')
@@ -198,3 +208,4 @@
 <!-- end::Post -->
 @extends('dashboard.partials.rentModal')
 @endsection
+@endif
