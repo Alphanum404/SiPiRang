@@ -5,16 +5,13 @@
 <head>
     <base href="../../../">
     <title>SiPiRang App | {{$title}} </title>
-    <meta name="description"
-        content="The most advanced Bootstrap Admin Theme on Themeforest trusted by 94,000 beginners and professionals. Multi-demo, Dark Mode, RTL support and complete React, Angular, Vue &amp; Laravel versions. Grab your copy now and get life-time updates for free." />
-    <meta name="keywords"
-        content="Metronic, bootstrap, bootstrap 5, Angular, VueJs, React, Laravel, admin themes, web design, figma, web development, free templates, free admin themes, bootstrap theme, bootstrap template, bootstrap dashboard, bootstrap dak mode, bootstrap button, bootstrap datepicker, bootstrap timepicker, fullcalendar, datatables, flaticon" />
+    <meta name="description" content="Aplikasi SiPiRang (Sistem Informasi Peminjaman Ruangan) adalah sebuah sistem berbasis web yang dirancang untuk memudahkan proses peminjaman ruangan di sebuah institusi pendidikan. Aplikasi ini dibangun menggunakan framework Laravel, yang terkenal dengan arsitektur MVC (Model-View-Controller)." />
+    <meta name="keywords" content="SiPiRang, Github" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="article" />
-    <meta property="og:title"
-        content="Metronic - Bootstrap 5 HTML, VueJS, React, Angular &amp; Laravel Admin Dashboard Theme" />
+    <meta property="og:title" content="Aplikasi SiPiRang (Sistem Informasi Peminjaman Ruangan) Kelompok 1" />
     <link rel="icon" href="/img/logo.png" />
     <!--begin::Fonts-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
@@ -33,8 +30,7 @@
         <!--begin::Authentication - Sign-in -->
         <div class="d-flex flex-column flex-lg-row flex-column-fluid">
             <!--begin::Aside-->
-            <div class="d-flex flex-column flex-lg-row-auto w-xl-600px positon-xl-relative"
-                style="background-color: #13263c">
+            <div class="d-flex flex-column flex-lg-row-auto w-xl-600px positon-xl-relative" style="background-color: #13263c">
                 <!--begin::Wrapper-->
                 <div class="d-flex flex-column position-xl-fixed top-0 bottom-0 w-xl-600px scroll-y">
                     <!--begin::Content-->
@@ -56,8 +52,7 @@
                     </div>
                     <!--end::Content-->
                     <!--begin::Illustration-->
-                    <div class="d-flex flex-row-auto bgi-no-repeat bgi-position-x-center bgi-size-contain bgi-position-y-bottom min-h-100px min-h-lg-350px"
-                        style="background-image: url(metro/assets/media/illustrations/sketchy-1/4-dark.png)"></div>
+                    <div class="d-flex flex-row-auto bgi-no-repeat bgi-position-x-center bgi-size-contain bgi-position-y-bottom min-h-100px min-h-lg-350px" style="background-image: url(metro/assets/media/illustrations/sketchy-1/4-dark.png)"></div>
                     <!--end::Illustration-->
                 </div>
                 <!--end::Wrapper-->
@@ -80,11 +75,9 @@
                             <!--begin::Heading-->
 
                             @if(session()->has('loginError'))
-                            <div class="alert alert-danger alert-dismissible fade show" style="margin-top: 50px"
-                                role="alert">
+                            <div class="alert alert-danger alert-dismissible fade show" style="margin-top: 50px" role="alert">
                                 {{session('loginError')}}
-                                <button type="button" class="btn-close" data-bs-dismiss="alert"
-                                    aria-label="Close"></button>
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                             </div>
                             @endif
                             <!--begin::Input group-->
@@ -94,8 +87,7 @@
                                 <!--end::Label-->
                                 <!--begin::Input-->
                                 @csrf
-                                <input class="form-control form-control-lg form-control-solid" type="text" name="email"
-                                    autocomplete="off" required />
+                                <input class="form-control form-control-lg form-control-solid" type="text" name="email" autocomplete="off" required />
                                 <!--end::Input-->
                                 <div class="fv-plugins-message-container invalid-feedback">
                                     @error('email')
@@ -114,8 +106,7 @@
                                 </div>
                                 <!--end::Wrapper-->
                                 <!--begin::Input-->
-                                <input class="form-control form-control-lg form-control-solid" type="password"
-                                    name="password" autocomplete="off" required />
+                                <input class="form-control form-control-lg form-control-solid" type="password" name="password" autocomplete="off" required />
                                 <!--end::Input-->
                             </div>
                             <!--end::Input group-->
@@ -152,7 +143,7 @@
     </div>
     <!--end::Main-->
     <script>
-    var hostUrl = "metro/assets/";
+        var hostUrl = "metro/assets/";
     </script>
     <!--begin::Javascript-->
     <!--begin::Global Javascript Bundle(used by all pages)-->
