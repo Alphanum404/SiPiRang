@@ -40,7 +40,7 @@
     <!--begin::Mobile logo-->
     <div class="d-flex align-items-center flex-grow-1 flex-lg-grow-0">
       <a href="" class="d-lg-none">
-        <img alt="Logo" src="img/logotext.png" class="h-50px" />
+        <img alt="Logo" src="{{Request::is('dashboard/*/') ? '/img/logotext.png' : '../img/logotext.png' }}" class="h-50px" />
       </a>
     </div>
     <!--end::Mobile logo-->
