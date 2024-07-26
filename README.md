@@ -95,7 +95,5 @@ Now you should be able to access the project locally at `http://localhost:8000` 
   
 ### Usage
 
-To login the dashboard you can use this role:
-- Admin : sekar@gmail.com (pass: sekar)
-- Dosen/Ketua Kelompok : rahma@gmail.com (pass: rahma)
-- Mahasiswa : azar@gmail.com (pass: azar)
+To login the dashboard you change or see database seeders
+<a href="https://github.com/Alphanum404/SiPiRang/blob/main/database/seeders/DatabaseSeeder.php">Click Here</a>
